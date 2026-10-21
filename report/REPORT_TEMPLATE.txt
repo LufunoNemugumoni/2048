@@ -1,8 +1,1 @@
-AUTONOMOUS SYSTEMS AND ROBOTICS 700
-Introduction
-Methodology
-Component A: sensor perception, sensor fusion, occupancy grid, Dijkstra, A*, PID, integration and evaluation
-Component B: multi-agent Webots simulation, communication, consensus, PSO, neural network, comparison
-Ethics and South African context
-Results and Evaluation
-Conclusion and Recommendations
+Use REPORT_TEMPLATE.md as the full report structure. Export it to PDF after inserting your student details, screenshots and measured results.
