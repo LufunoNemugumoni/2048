@@ -1,0 +1,15 @@
+#VRML_SIM R2019a utf8
+EXTERNPROTO "webots://projects/robots/gctronic/e-puck/protos/E-puck.proto"
+WorldInfo { basicTimeStep 64 gravity 0 -9.81 0 }
+Viewpoint { position 0 6 7 orientation 1 0 0 -0.62 }
+Background { skyColor [0.12 0.18 0.28] groundColor [0.25 0.25 0.25] }
+DirectionalLight { direction -1 -1 -1 intensity 1 castShadows TRUE }
+Floor { size 7 7 appearance Appearance { material Material { diffuseColor 0.55 0.58 0.62 roughness 0.8 } } }
+DEF WALL1 Solid { translation 0 0.15 -3.4 children [ Shape { appearance Appearance { material Material { diffuseColor 0.1 0.1 0.12 } } geometry Box { size 6.8 0.3 0.2 } } ] boundingObject Box { size 6.8 0.3 0.2 } }
+DEF WALL2 Solid { translation 0 0.15 3.4 children [ Shape { appearance Appearance { material Material { diffuseColor 0.1 0.1 0.12 } } geometry Box { size 6.8 0.3 0.2 } } ] boundingObject Box { size 6.8 0.3 0.2 } }
+DEF WALL3 Solid { translation -3.4 0.15 0 children [ Shape { appearance Appearance { material Material { diffuseColor 0.1 0.1 0.12 } } geometry Box { size 0.2 0.3 6.8 } } ] boundingObject Box { size 0.2 0.3 6.8 } }
+DEF WALL4 Solid { translation 3.4 0.15 0 children [ Shape { appearance Appearance { material Material { diffuseColor 0.1 0.1 0.12 } } geometry Box { size 0.2 0.3 6.8 } } ] boundingObject Box { size 0.2 0.3 6.8 } }
+DEF OBS1 Solid { translation 0 0.2 0 children [ Shape { appearance Appearance { material Material { diffuseColor 0.8 0.12 0.08 } } geometry Box { size 1 0.4 1 } } ] boundingObject Box { size 1 0.4 1 } }
+E-puck { translation -2.2 0.08 -2.2 name "Robot1" controller "swarm_robot_controller" emitterSlot [ Emitter { name "emitter" channel 1 range 0 } ] receiverSlot [ Receiver { name "receiver" channel 1 } ] turretSlot [ GPS { name "gps" } Compass { name "compass" } ] }
+E-puck { translation 0 0.08 2.2 name "Robot2" controller "swarm_robot_controller" emitterSlot [ Emitter { name "emitter" channel 1 range 0 } ] receiverSlot [ Receiver { name "receiver" channel 1 } ] turretSlot [ GPS { name "gps" } Compass { name "compass" } ] }
+E-puck { translation 2.2 0.08 -2.2 name "Robot3" controller "swarm_robot_controller" emitterSlot [ Emitter { name "emitter" channel 1 range 0 } ] receiverSlot [ Receiver { name "receiver" channel 1 } ] turretSlot [ GPS { name "gps" } Compass { name "compass" } ] }
