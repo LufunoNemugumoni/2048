@@ -1,3 +1,7 @@
-import random,math
-def pso(target=(0,0),n=8,it=20):
- p=[[random.uniform(-3,3),random.uniform(-3,3)] for _ in range(n)];best=min(p,key=lambda x:math.hypot(x[0]-target[0],x[1]-target[1]));return best
+import math
+
+def pso_step(goal, robot_id, iteration):
+    # Deterministic lightweight PSO-inspired velocity update for reproducibility.
+    phase=0.37*robot_id+0.11*iteration
+    vx=0.18*math.sin(phase); vz=0.18*math.cos(phase*1.3)
+    return goal[0]+vx, goal[1]+vz
