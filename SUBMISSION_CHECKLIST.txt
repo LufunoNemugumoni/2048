@@ -1,0 +1,12 @@
+FINAL SUBMISSION CHECKLIST
+==========================
+[ ] Install and record Python/Webots versions.
+[ ] Run `python run_all.py`; confirm no exceptions and regenerate result plots/CSVs.
+[ ] Open both .wbt worlds in Webots and resolve any version/parser/device errors.
+[ ] Replace starter robot placeholders with working differential-drive robot models.
+[ ] Complete Component A sensor fusion, planner invocation and wheel-motor PID integration inside Webots.
+[ ] Complete Component B Emitter/Receiver communication, consensus, task allocation and local safety control inside Webots.
+[ ] Capture genuine Webots screenshots/logs and repeat trials.
+[ ] Update the report to separate Python reference results from Webots measurements.
+[ ] Add verified academic/technical references in the required citation style.
+[ ] Check that the final ZIP is below 50 MB and all scripts run from the README instructions.

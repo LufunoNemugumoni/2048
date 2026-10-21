@@ -1,0 +1,16 @@
+WEBOTS R2018b COMPATIBILITY NOTE
+================================
+
+The project now targets Webots R2018b in its README and world-file headers. Newer PBRAppearance nodes were replaced with legacy Appearance/Material syntax.
+
+IMPORTANT: this is a compatibility-oriented edit, NOT a successful R2018b validation. Webots was not available to open or run these worlds. The robot bodies are visual placeholders without differential-drive wheel motors. The Python controller files are API/device-access skeletons, not complete integrated controllers. The swarm world does not yet implement Emitter/Receiver communication.
+
+Before claiming a working Webots implementation:
+1. Open each .wbt in Webots R2018b and fix any unsupported nodes/PROTO references.
+2. Replace the placeholder robot bodies with a robot model containing wheel motors, range sensors and camera as needed.
+3. Implement wheel commands and sensor-to-planner integration in Component A.
+4. Implement Emitter/Receiver messages, consensus, task allocation and local safety behaviour in Component B.
+5. Run both worlds and capture genuine R2018b logs/screenshots.
+6. Update the report with verified Webots results, keeping Python reference metrics clearly separate.
+
+Do not report the included Python reference metrics as Webots R2018b measurements.
